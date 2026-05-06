@@ -7,7 +7,7 @@ void swap(int *i, int *j){
 }
 
 void wiggleSort(int arr[], int n){
-    for( i =  0 ; i < n-1 ; i++){
+    for(int i =  0 ; i < n-1 ; i++){
 
         if(i %2 == 0 && arr[i] > arr[i+1])
            swap(&arr[i],&arr[i+1]);
@@ -27,7 +27,7 @@ int main()
     for(int i = 0 ; i <n; i++){
         scanf("%d", &a[i]);
     }
-    wiggleSort(a,n,0);
+    wiggleSort(a,n);
         printf("Array after wiggle sort is: \n");
         for(int i = 0; i < n; i++){
             printf("%d ",a[i]);
